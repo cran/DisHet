@@ -1,0 +1,3 @@
+export(DisHet, StromaExp)
+import(gtools, matrixStats)
+importFrom("stats", "quantile", "rgamma", "rnorm", "runif", "var")
