@@ -1,8 +1,7 @@
 \name{DisHet}
 \alias{DisHet}
 \title{Heterogeneity Dissection}
-\description{
-  This function performs dissection of bulk sample gene expression using matched normal and tumorgraft RNA-seq data. It outputs the final proportion estiamtes of the three components for all patients. 
+\description{This function performs dissection of bulk sample gene expression using matched normal and tumorgraft RNA-seq data. It outputs the final proportion estiamtes of the three components for all patients. 
   
   The patient-specific dissection proportion estimates are saved in a 3-by-k matrix named "rho", where k is the number of patients. The 3 rows of "rho" matrix correspond to the tumor, normal, stroma components in order. That is, the proportion estimate of tumor component for patient i is stored in rho[1,i]; the normal component proportion estimate of this patient is stored in rho[2,i];and stroma component proportion in rho[3,i]. 
 }
@@ -60,12 +59,16 @@ DisHet(exp_T,exp_N,exp_G, save=TRUE, MCMC_folder,
   
   The values specified for "initial_rho_S", "initial_rho_G", and "initial_rho_S" all have to be positive. If the three proportion initials are not summing to 1, normalization is performed automatically to force the sum to be 1. 
 }
+%% \references{
+%%  ~~ reference to a publication or URL from which the data were obtained ~~
+%% Manuscript "An Empirical Approach Leveraging Tumorgrafts to Dissect the Tumor Microenvironment in Renal Cell Carcinoma Identifies Missing Link to Prognostic Inflammatory Factors" (recently submitted to Nature Genetics). 
+%% }
 \examples{
   load(system.file("example/example_data.RData",package="DisHet"))
   exp_T <- exp_T[1:200,]
   exp_N <- exp_N[1:200,]
   exp_G <- exp_G[1:200,]
   
-  rho <- DisHet(exp_T, exp_N, exp_G, save=FALSE, n_cycle=500, mean_last=50)
+  rho <- DisHet(exp_T, exp_N, exp_G, save=FALSE, n_cycle=200, mean_last=50)
 }
 
