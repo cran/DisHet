@@ -1,11 +1,11 @@
-\name{eIST_signatures}
-\alias{eIST_signatures}
+\name{eTME_signatures}
+\alias{eTME_signatures}
 \docType{data}
 \title{Empirically-defined Immune Signature Genes in RCC Bulk Tumor
 }
-\description{Based on DisHet analysis of 35 RCC trio RNA-Seq data, we defined immune-specific genes with empirical evidence, named eIST, for empirically-defined immune signature of tumor. Using eIST, we refined previously published Immunome signatures. We also assigned other eIST genes to specific immune cell types using the BLUEPRINT project data. These two sets of refined gene signatures were consolidated and documented in the DisHet R package as the "eIST" immune cell gene signatures.
+\description{Based on DisHet analysis of 35 RCC trio RNA-Seq data, we defined immune-specific genes with empirical evidence, named eTME, for empirically-defined immune signature of tumor. Using eTME, we refined previously published Immunome signatures. We also assigned other eTME genes to specific immune cell types using the BLUEPRINT project data. These two sets of refined gene signatures were consolidated and documented in the DisHet R package as the "eTME" immune cell gene signatures.
 }
-\usage{data("eIST_signatures")}
+\usage{data("eTME_signatures")}
 \format{
   A List with 26 items/vectors.
   \describe{
@@ -48,8 +48,8 @@
 %%  ~~ possibly secondary sources and usages ~~
 %%}
 \examples{
-data(eIST_signatures)
-eIST_signatures$Macrophages
-eIST_signatures$'T cells'
+data(eTME_signatures)
+eTME_signatures$Macrophages
+eTME_signatures$'T cells'
 }
 \keyword{datasets}

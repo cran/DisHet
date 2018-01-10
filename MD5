@@ -1,10 +1,12 @@
-bcfbfc13a78738990b809858e735e3ed *DESCRIPTION
+bb532b0830f17eb9dd69a1686d029e54 *DESCRIPTION
 0145e05b7252baf354d877130bc64747 *NAMESPACE
-fa1ff7b86cc508e4de7819728c481e5f *NEWS
+280bd9fbc0499678c9aacfccff6a48f3 *NEWS
 81d5d3db5757b4ef329413e84bb8e87d *R/DisHet.R
 215d824aa0bc058cc2d8420151ad854f *R/StromaExp.R
-683cc8f0e68e7ba8ebac738b8e0063a4 *data/eIST_signatures.RData
+503db1741f8e1c379b184e3c3a8a62b0 *R/data.R
+503db1741f8e1c379b184e3c3a8a62b0 *R/eTME_signatures.R
+59ed89e76363b5b146d2dbe26db07b13 *data/eTME_signatures.RData
 3019253c09637a104c493d90bafa6ebe *inst/example/example_data.RData
 7417472776da3be2ebf542d584618955 *man/DisHet.Rd
 8a84e29b7b07d6fcd8f7a3c1d9e03bd4 *man/StromaExp.Rd
-65233619e2e6b09331ced9ec806f68b7 *man/eIST_signatures.Rd
+ff6c8c45a6f85ef4697f3c584687848c *man/eTME_signatures.Rd
