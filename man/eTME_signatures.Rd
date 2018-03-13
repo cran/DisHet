@@ -13,18 +13,14 @@
     \item{'M1 macrophages'}{:   a vector of genes that are abundantly expressed in M1 macrophages}
     \item{Macrophages}{:   a vector of genes that are abundantly expressed in Macrophages}
     \item{Monocytes}{:   a vector of genes that are abundantly expressed in Monocytes}
-    \item{Thymocytes}{:   a vector of genes that are abundantly expressed in Thymocytes}
-    \item{'Megakaryocyte cells'}{:   a vector of genes that are abundantly expressed in Megakaryocyte cells}
     \item{'B cells'}{:   a vector of genes that are abundantly expressed in B cells}
     \item{'CD8 T cells'}{:   a vector of genes that are abundantly expressed in CD8 T cells}
     \item{'T cells'}{:   a vector of genes that are abundantly expressed in T cells}
-    \item{'Common lymphoid progenitors'}{:   a vector of genes that are abundantly expressed in Common lymphoid progenitors}
     \item{'Dendritic cells'}{:   a vector of genes that are abundantly expressed in Dendritic cells}
     \item{'CD56dim NK cells'}{:   a vector of genes that are abundantly expressed in CD56dim NK cells}
     \item{'CD56bright NK cells'}{:   a vector of genes that are abundantly expressed in CD56bright NK cells}
     \item{'NK cells'}{:   a vector of genes that are abundantly expressed in NK cells}
     \item{'Endothelial cells'}{:   a vector of genes that are abundantly expressed in Endothelial cells}
-    \item{Erythroblasts}{:   a vector of genes that are abundantly expressed in Erythroblasts}
     \item{Eosinophils}{:   a vector of genes that are abundantly expressed in Eosinophils}
     \item{Neutrophils}{:   a vector of genes that are abundantly expressed in Neutrophils}
     \item{'Treg cells'}{:   a vector of genes that are abundantly expressed in Treg cells}
@@ -35,6 +31,8 @@
     \item{iDCs}{:   a vector of genes that are abundantly expressed in iDCs}
     \item{pDCs}{:   a vector of genes that are abundantly expressed in pDCs}
     \item{'Mast cells'}{:   a vector of genes that are abundantly expressed in Mast cells}
+    \item{'Tm cells'}{:   a vector of genes that are abundantly expressed in Tm cells}
+    \item{Pericytes}{:   a vector of genes that are abundantly expressed in Pericytes}
   }
 }
 %% \details{
