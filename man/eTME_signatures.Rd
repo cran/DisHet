@@ -7,32 +7,33 @@
 }
 \usage{data("eTME_signatures")}
 \format{
-  A List with 26 items/vectors.
+  A List contains 2 lists of signatures:the 1st list "signatures_gene" contains the signatures on gene level, and the 2nd list "signatures_mRNA" contains the signatures on mRNA level. Both lists contain 25 items/vectors.
   \describe{
-    \item{'M2 macrophages'}{:   a vector of genes that are abundantly expressed in M2 macrophages}
-    \item{'M1 macrophages'}{:   a vector of genes that are abundantly expressed in M1 macrophages}
-    \item{Macrophages}{:   a vector of genes that are abundantly expressed in Macrophages}
-    \item{Monocytes}{:   a vector of genes that are abundantly expressed in Monocytes}
-    \item{'B cells'}{:   a vector of genes that are abundantly expressed in B cells}
-    \item{'CD8 T cells'}{:   a vector of genes that are abundantly expressed in CD8 T cells}
-    \item{'T cells'}{:   a vector of genes that are abundantly expressed in T cells}
-    \item{'Dendritic cells'}{:   a vector of genes that are abundantly expressed in Dendritic cells}
-    \item{'CD56dim NK cells'}{:   a vector of genes that are abundantly expressed in CD56dim NK cells}
-    \item{'CD56bright NK cells'}{:   a vector of genes that are abundantly expressed in CD56bright NK cells}
-    \item{'NK cells'}{:   a vector of genes that are abundantly expressed in NK cells}
-    \item{'Endothelial cells'}{:   a vector of genes that are abundantly expressed in Endothelial cells}
-    \item{Eosinophils}{:   a vector of genes that are abundantly expressed in Eosinophils}
-    \item{Neutrophils}{:   a vector of genes that are abundantly expressed in Neutrophils}
-    \item{'Treg cells'}{:   a vector of genes that are abundantly expressed in Treg cells}
-    \item{'Th1 cells'}{:   a vector of genes that are abundantly expressed in Th1 cells}
-    \item{'Th2 cells'}{:   a vector of genes that are abundantly expressed in Th2 cells}
-    \item{'Th cells'}{:   a vector of genes that are abundantly expressed in Th cells}
-    \item{aDCs}{:   a vector of genes that are abundantly expressed in aDCs}
-    \item{iDCs}{:   a vector of genes that are abundantly expressed in iDCs}
-    \item{pDCs}{:   a vector of genes that are abundantly expressed in pDCs}
-    \item{'Mast cells'}{:   a vector of genes that are abundantly expressed in Mast cells}
-    \item{'Tm cells'}{:   a vector of genes that are abundantly expressed in Tm cells}
-    \item{Pericytes}{:   a vector of genes that are abundantly expressed in Pericytes}
+    \item{'M2 macrophages'}{:   a vector of genes/mRNA that are abundantly expressed in M2 macrophages}
+    \item{'M1 macrophages'}{:   a vector of genes/mRNA that are abundantly expressed in M1 macrophages}
+    \item{Macrophages}{:   a vector of genes/mRNA that are abundantly expressed in Macrophages}
+    \item{Monocytes}{:   a vector of genes/mRNA that are abundantly expressed in Monocytes}
+    \item{'B cells'}{:   a vector of genes/mRNA that are abundantly expressed in B cells}
+    \item{'CD8 T cells'}{:   a vector of genes/mRNA that are abundantly expressed in CD8 T cells}
+    \item{'T cells'}{:   a vector of genes/mRNA that are abundantly expressed in T cells}
+    \item{'Dendritic cells'}{:   a vector of genes/mRNA that are abundantly expressed in Dendritic cells}
+    \item{'CD56dim NK cells'}{:   a vector of genes/mRNA that are abundantly expressed in CD56dim NK cells}
+    \item{'CD56bright NK cells'}{:   a vector of genes/mRNA that are abundantly expressed in CD56bright NK cells}
+    \item{'NK cells'}{:   a vector of genes/mRNA that are abundantly expressed in NK cells}
+    \item{'Endothelial cells'}{:   a vector of genes/mRNA that are abundantly expressed in Endothelial cells}
+    \item{Eosinophils}{:   a vector of genes/mRNA that are abundantly expressed in Eosinophils}
+    \item{Neutrophils}{:   a vector of genes/mRNA that are abundantly expressed in Neutrophils}
+    \item{'Treg cells'}{:   a vector of genes/mRNA that are abundantly expressed in Treg cells}
+    \item{'Th1 cells'}{:   a vector of genes/mRNA that are abundantly expressed in Th1 cells}
+    \item{'Th2 cells'}{:   a vector of genes/mRNA that are abundantly expressed in Th2 cells}
+    \item{'Tfh cells'}{:   a vector of genes/mRNA that are abundantly expressed in Tfh cells}
+    \item{'Th cells'}{:   a vector of genes/mRNA that are abundantly expressed in Th cells}
+    \item{aDCs}{:   a vector of genes/mRNA that are abundantly expressed in aDCs}
+    \item{iDCs}{:   a vector of genes/mRNA that are abundantly expressed in iDCs}
+    \item{pDCs}{:   a vector of genes/mRNA that are abundantly expressed in pDCs}
+    \item{'Mast cells'}{:   a vector of genes/mRNA that are abundantly expressed in Mast cells}
+    \item{'Tm cells'}{:   a vector of genes/mRNA that are abundantly expressed in Tm cells}
+    \item{Pericytes}{:   a vector of genes/mRNA that are abundantly expressed in Pericytes}
   }
 }
 %% \details{
@@ -47,7 +48,9 @@
 %%}
 \examples{
 data(eTME_signatures)
-eTME_signatures$Macrophages
-eTME_signatures$'T cells'
+eTME_signatures$signatures_gene$Macrophages
+eTME_signatures$signatures_mRNA$Macrophages
+eTME_signatures$signatures_gene$`T cells`
+eTME_signatures$signatures_mRNA$`T cells`
 }
 \keyword{datasets}
